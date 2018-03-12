@@ -48,7 +48,7 @@ public class LevelManager : MonoBehaviour {
             if (GameObject.Find("Start").GetComponent<StartScene>().begin == true)
             {
                 Debug.Log("Cambiando de escena");
-                LoadNextLevel();
+                LoadLevel("level_00");
             }
         }
 
@@ -57,18 +57,30 @@ public class LevelManager : MonoBehaviour {
             if (GameObject.Find("CountDown").GetComponent<CountdownTimer>().ready == true)
             {//move from level 01
                 Debug.Log("Cambiando de escena");
-                LoadNextLevel();
+                LoadLevel("level_01");
             }
         }
 
         if (GameObject.Find("Door") != null)
         { //move from level01 to next scene in this case win scene
-            if (GameObject.Find("Door").GetComponent<Door>().endLevel == true) { LoadNextLevel(); }
+            if (GameObject.Find("Door").GetComponent<Door>().endLevel == true)
+            {
+                LoadLevel("Win");
+            }
         }
 
-        if (GameObject.Find("Stats") != null)
+        if (GameObject.Find("PanelStat") != null)
         { 
-            if (GameObject.Find("Stats").GetComponent<Stats>().countdownI <=0)
+            if (GameObject.Find("PanelStat").GetComponent<Stats>().changeScene == true)
+            {
+                Debug.Log("Cambiando de escena");
+                LoadLevel("Lose");
+            }
+        }
+
+        if (GameObject.Find("Player") != null)
+        {
+            if (GameObject.Find("Player").GetComponent<Player>().trueDead==true)
             {
                 Debug.Log("Cambiando de escena");
                 LoadLevel("Lose");

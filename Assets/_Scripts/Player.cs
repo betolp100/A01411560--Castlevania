@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    
 
     protected BoxCollider2D collider;
     public GameObject player;
@@ -21,7 +20,7 @@ public class Player : MonoBehaviour
     private bool hitted = false;
     private bool isCrouching = false;
     private bool levelStart;
-
+    public bool trueDead = false;
 
     private int attackSpeed = 1;
     private int direction = 1;
@@ -240,7 +239,9 @@ public class Player : MonoBehaviour
                 animator.SetBool("Dead", false);
                 attackSpeed = 1;
                 animator.SetBool("Revive", true);
-            }
+            } if (lives <= 0) {
+                Debug.Log("OLIWIS");
+                trueDead = true; }
             
         }
 

@@ -189,7 +189,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2073485606}
+      - m_Target: {fileID: 1909412734}
         m_MethodName: LoadLevel
         m_Mode: 5
         m_Arguments:
@@ -311,7 +311,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2073485606}
+      - m_Target: {fileID: 114202148530182448, guid: e3abb99aa0babe845a5e794bbe6366ff,
+          type: 2}
         m_MethodName: QuitLevel
         m_Mode: 1
         m_Arguments:
@@ -824,7 +825,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1904862191}
---- !u!1001 &2073485605
+--- !u!1001 &1909412733
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -866,9 +867,9 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3abb99aa0babe845a5e794bbe6366ff, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &2073485606 stripped
+--- !u!114 &1909412734 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114202148530182448, guid: e3abb99aa0babe845a5e794bbe6366ff,
     type: 2}
-  m_PrefabInternal: {fileID: 2073485605}
+  m_PrefabInternal: {fileID: 1909412733}
   m_Script: {fileID: 11500000, guid: 7e14ce13d1d7eb6499f268f7e269b99c, type: 3}

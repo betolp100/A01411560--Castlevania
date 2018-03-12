@@ -22,7 +22,8 @@ public class WhipSound : MonoBehaviour
 
         if (coll.gameObject.layer == 9)
         { //if wee hit something destroyable
-            GameObject.Find("Stats").GetComponent<Stats>().score  = GameObject.Find("Stats").GetComponent<Stats>().score + 100;
+            GameObject.Find("PanelStat").GetComponent<Stats>().score  = GameObject.Find("PanelStat").GetComponent<Stats>().score + 100;
+
             soundManager.PlaySong(3);
         }
 

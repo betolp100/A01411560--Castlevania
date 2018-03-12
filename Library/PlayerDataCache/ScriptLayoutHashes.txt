@@ -2,7 +2,7 @@ WindowsStandalone
 SceneListBegin?
 Assets/Scenes/Start.unity
 Assets/Scenes/level_00.unity
-Assets/_Scripts/level_01.unity
+Assets/Scenes/level_01.unity
 Assets/Scenes/Win.unity
 Assets/Scenes/Lose.unity
 SceneListEnd?
@@ -114,7 +114,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-77a46d9dbad997ffae48d80574bfadee Assembly-CSharp.dll:.Player
+9fa7b7234bcc2a7315793c5a0434c0f1 Assembly-CSharp.dll:.Player
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 4463faa6d1b0f73c6761be8167d3b63f Assembly-CSharp.dll:.WaveSpawner
@@ -127,6 +127,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 2236d8d73999aa0e4f54ee1bce744cfc Assembly-CSharp.dll:.CountdownTimer
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
+9bb13c4b98452788a65391110caa4048 Assembly-CSharp.dll:.Stats
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MusicManager
 ceb59aa7fd26b7d139bf42f5fc49560e Assembly-CSharp.dll:.Medusa
 b859da8d3604aafbc053091851dc7463 Assembly-CSharp.dll:.Door
@@ -159,9 +160,8 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 1c6a4832a4fe88f96fb9e37629c8efb8 Assembly-CSharp.dll:.Candle
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+180b13fb088de1f17cfedd9b89ea5001 Assembly-CSharp.dll:.StartScene
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BackGround
 83032d4b305ad34cecd09d151507c931 Assembly-CSharp.dll:.SoundManager
 c700b36b0a98bac8c204bd7beeec45e0 Assembly-CSharp.dll:.Platform
 7b596faf5b0811a1a3bda4daee5cb016 Assembly-CSharp.dll:.BatCollider
-7f525895b4dc1329b8eb2c35046dce3f Assembly-CSharp.dll:.Stats
-180b13fb088de1f17cfedd9b89ea5001 Assembly-CSharp.dll:.StartScene
