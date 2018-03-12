@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4149023473099498}
   - component: {fileID: 61312123318437474}
+  - component: {fileID: 114088280287367544}
   m_Layer: 0
   m_Name: WhipCollider
   m_TagString: Whip
@@ -65,3 +66,14 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.06}
   m_EdgeRadius: 0
+--- !u!114 &114088280287367544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1278629026660232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306bf1806d529be43856d9a0f4d05f65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

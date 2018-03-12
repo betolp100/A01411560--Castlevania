@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A01411560--Castlevania", "A01411560--Castlevania.csproj", "{BA5FF60E-7185-FBCA-77AF-1A77CA16BE4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA5FF60E-7185-FBCA-77AF-1A77CA16BE4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA5FF60E-7185-FBCA-77AF-1A77CA16BE4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA5FF60E-7185-FBCA-77AF-1A77CA16BE4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA5FF60E-7185-FBCA-77AF-1A77CA16BE4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

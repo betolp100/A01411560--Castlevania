@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114085233782403584}
   - component: {fileID: 95064703268053408}
   - component: {fileID: 50484214118506458}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ghost
   m_TagString: Ghost
   m_Icon: {fileID: 0}
@@ -117,7 +117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6d1095966451ea4aac87cb3437b8e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dmgColor: {r: 0, g: 0, b: 0, a: 0}
   firePrefab: {fileID: 1290552422793886, guid: e2050ea3a56207c47983bf4aa7e4c3d0, type: 2}
+  lives: 1
   speed: 1
 --- !u!212 &212367489129897044
 SpriteRenderer:

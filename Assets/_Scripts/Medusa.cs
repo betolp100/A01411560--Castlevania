@@ -9,7 +9,7 @@ public class Medusa : MonoBehaviour
     private Vector3 fly;
     private bool medusaDead=false;
     public float speed;
-
+    //move medusa to the right
     public void Update()
     {
             fly.x = 1;

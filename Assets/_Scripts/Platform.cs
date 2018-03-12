@@ -36,7 +36,7 @@ public class Platform : MonoBehaviour {
                 rigi.transform.Translate(velocity);
             }
         }
-        lastPos = _transform.position;
+        lastPos = _transform.position;  //calling an update after the regular update 
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -47,7 +47,7 @@ public class Platform : MonoBehaviour {
             if (rigi != null)
             {
                 Add(rigi);
-            }
+            }//adding the player to a rigibody list
         }
     }
 
@@ -59,7 +59,7 @@ public class Platform : MonoBehaviour {
             if (rigi != null)
             {
                 Remove(rigi);
-            }
+            }//removing the player from the rigibody list
         }
     }
 

@@ -25,7 +25,7 @@ public class Bat : MonoBehaviour
     void Update()
     {
         if (isPlayerNear == true)
-        {
+        {// move to player
             Vector3 dir = player.position - transform.position;
             float distanceThisFrame = speed * Time.deltaTime;
             transform.Translate(dir.normalized * distanceThisFrame, Space.World);
@@ -37,7 +37,7 @@ public class Bat : MonoBehaviour
     {
 
         if (collision.gameObject.tag == "Player")
-        {
+        {//when player collide with the sensor start flying
             animator.SetBool("Flying", true);
             animatorCurve.SetBool("StartFlying", true);
             isPlayerNear = true;

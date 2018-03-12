@@ -35,7 +35,7 @@ public class Ghost : MonoBehaviour {
     }
 
     void MoveRight()
-    {
+    {//move right until collission
         if (ishitten == false)
         {
             movingLeft = false;
@@ -46,7 +46,7 @@ public class Ghost : MonoBehaviour {
     }
 
     void MoveLeft()
-    {
+    {//move left until collission
         if (ishitten == false)
         {
             movingLeft = true;
@@ -57,7 +57,7 @@ public class Ghost : MonoBehaviour {
     }
 
     void Flip()
-    {
+    {//flip x scale
         Vector3 theScale = transform.localScale;
         theScale.x = -walk.x;
         transform.localScale = theScale;
@@ -70,9 +70,9 @@ public class Ghost : MonoBehaviour {
             if (movingLeft == false)
                 movingLeft = true;
             else movingLeft = false;
-        }
+        }//collission
 
-        if (collision.gameObject.tag == "Whip")
+        if (collision.gameObject.tag == "Whip")//destroy
         {
             lives--;
             if (lives <= 0)
@@ -89,7 +89,7 @@ public class Ghost : MonoBehaviour {
     }
 
     IEnumerator Hitted()
-    {
+    {//method for knights
         ishitten = true;
         rend.material.color = dmgColor;
         animator.enabled = false;

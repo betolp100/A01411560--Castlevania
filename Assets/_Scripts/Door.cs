@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Door : MonoBehaviour {
-
+    private SoundManager soundManager;
+    private LevelManager levelManager;
     [HideInInspector]
-    public bool reachDoor = false;
+    public bool endLevel = false;
+    [HideInInspector]
+    public bool reachDoor = false;     //some variable...
     public Transform waypoint;
     public GameObject player;
     protected Animator animator;
@@ -13,13 +16,18 @@ public class Door : MonoBehaviour {
     public float speedWalk;
 	void Start ()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();   
         playerAnimator = player.GetComponent<Animator>();
         animator.SetBool("End", false);
     }
-	
-	// Update is called once per frame
-	void Update ()
+    //Instantiating components
+    private void Awake()
+    {
+        if (!soundManager) soundManager = GameObject.FindObjectOfType<SoundManager>();
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
         if (reachDoor == true)
         {
@@ -29,8 +37,9 @@ public class Door : MonoBehaviour {
 
     IEnumerator LoadNextRoom()
     {
+        //Once we reach to the door, we change the scene
         playerAnimator.SetInteger("Speed", 0);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
 
         playerAnimator.SetInteger("Speed", 1);
         Vector3 dir = waypoint.position - player.transform.position;
@@ -39,19 +48,27 @@ public class Door : MonoBehaviour {
 
         yield return new WaitForSeconds(1.5f);
         animator.SetBool("End", false);
-        playerAnimator.SetInteger("Speed", 0);
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2.4f);
+        endLevel = true;
         reachDoor = false;
+
+
     }   
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
-        {
+        { //When colliding with player
+            soundManager.PlaySong(5);
+            Destroy(GameObject.Find("MusicManager"));
+            
             animator.SetBool("End", true);
             playerAnimator.SetInteger("Speed", 1);
             reachDoor = true;
+            
         }
     }
+
+
 }
